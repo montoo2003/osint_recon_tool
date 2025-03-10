@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OSINT Recon Tool</title>
+</head>
+<body>
+    <h1>Dark Web Lookup</h1>
+    <form method="post">
+        <input type="text" name="query" placeholder="Enter email or username">
+        <button type="submit">Search</button>
+    </form>
+
+    {% if result %}
+    <p>Result: {{ result }}</p>
+    {% endif %}
+</body>
+</html>
